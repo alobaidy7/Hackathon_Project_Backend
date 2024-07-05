@@ -14,7 +14,8 @@ namespace Hackathon_Project_Backend.Data
         }
 
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Read> Reads { get; set; }
+        public DbSet<City> Cities { get; set; }
 
 
 

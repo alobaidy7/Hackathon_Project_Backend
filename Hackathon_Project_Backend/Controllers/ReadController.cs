@@ -1,12 +1,14 @@
 ﻿using Hackathon_Project_Backend.Data;
 using Hackathon_Project_Backend.DTOs;
 using Hackathon_Project_Backend.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hackathon_Project_Backend.Controllers
 {
     [Route("/api")]
     [ApiController]
+   // [EnableCors("CorsPolicy")]
     public class ReadController : Controller
     {
         private readonly ApplicationDbContext _context;

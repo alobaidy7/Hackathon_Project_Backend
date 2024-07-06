@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Cors Policy
 
-builder.Services.AddCors(options => options.AddPolicy("CorsPolicy", build => {
+builder.Services.AddCors(options => options.AddPolicy("CorsPolicy", build =>
+{
 
     build.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
 }));
@@ -39,7 +40,6 @@ app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
-app.UseAuthorization();
 
 app.MapControllers();
 

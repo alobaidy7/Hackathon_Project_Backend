@@ -1,5 +1,6 @@
 ﻿using Hackathon_Project_Backend.Data;
 using Hackathon_Project_Backend.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -10,6 +11,7 @@ namespace Hackathon_Project_Backend.Controllers
 {
     [Route("/api")]
     [ApiController]
+  //  [EnableCors("CorsPolicy")]
     public class CityController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
